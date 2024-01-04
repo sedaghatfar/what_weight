@@ -42,7 +42,7 @@ def remove_outliers(df, column):
 
 # Streamlit app
 def main():
-    st.title("Text File Processor")
+    st.title("Weight What[sApp]?")
 
     # File uploader
     uploaded_file = st.file_uploader("Choose a file", type="txt")
