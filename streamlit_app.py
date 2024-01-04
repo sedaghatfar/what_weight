@@ -45,7 +45,7 @@ def main():
     st.title("Weight What[sApp]?")
 
     # Layout for image and text
-    col1, col2 = st.beta_columns([1, 2])
+    col1, col2 = st.columns([1, 2])
     with col1:
         st.image('Sedaghatfar/weds_export.jpeg', use_column_width=True)
     with col2:
