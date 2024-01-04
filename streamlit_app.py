@@ -44,6 +44,15 @@ def remove_outliers(df, column):
 def main():
     st.title("Weight What[sApp]?")
 
+    # Layout for image and text
+    col1, col2 = st.beta_columns([1, 2])
+    with col1:
+        st.image('Sedaghatfar/weds_export.jpeg', use_column_width=True)
+    with col2:
+        st.write("""
+        To easily track my weight I used a Whatsapp groupchat, and created this app to upload an export of the chat, do some cleaning and display my weight over time.
+        """)
+
     # File uploader
     uploaded_file = st.file_uploader("Choose a file", type="txt")
     if uploaded_file is not None:
