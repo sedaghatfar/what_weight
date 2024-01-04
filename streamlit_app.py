@@ -54,7 +54,7 @@ def main():
         st.write("\n\n\n\n")
         st.write("\n\n\n\n")
         st.write("To easily track my weight I use a Whatsapp groupchat, and created this app to upload an export of the chat")
-        st.write("""Then use Regex to parse out date,speaker and weight and display using plotly.""")
+        st.write("""Then use Regex to parse out date, speaker, and weight to display a chart using plotly.""")
 
     # File uploader
     uploaded_file = st.file_uploader("Choose a file", type="txt")
