@@ -48,7 +48,7 @@ def main():
     # Layout for image and text
     col1, col2 = st.columns([1, 2])
     with col1:
-        st.image('weds_export.jpeg', use_column_width=True)
+        # st.image('weds_export.jpeg', use_column_width=True)
     with col2:
         st.write("""
         To easily track my weight I used a Whatsapp groupchat, and created this app to upload an export of the chat, do some cleaning and display my weight over time.
