@@ -51,7 +51,7 @@ def main():
     with col1:
         st.image('/mount/src/what_weight/weds_export.jpeg', use_column_width=True)
     with col2:
-        st.write("\n\n\n")
+        st.write("\n\n\n\n\n\n\n\n")
         st.write("""
         To easily track my weight I used a Whatsapp groupchat, and created this app to upload an export of the chat
         """)
