@@ -31,6 +31,15 @@ def process_file(uploaded_file):
     })
     return df
 
+# Function to remove outliers
+def remove_outliers(df, column):
+    Q1 = df[column].quantile(0.25)
+    Q3 = df[column].quantile(0.75
+    IQR = Q3 - Q1
+    lower_bound = Q1 - 1.5 * IQR
+    upper_bound = Q3 + 1.5 * IQR
+    return df[(df[column] >= lower_bound) & (df[column] <= upper_bound)]
+
 # Streamlit app
 def main():
     st.title("Text File Processor")
@@ -45,8 +54,15 @@ def main():
         speaker_list = data['Speaker'].unique()
         selected_speaker = st.selectbox("Select a Speaker", speaker_list)
 
+        # Checkbox for outlier removal
+        remove_outliers_option = st.checkbox("Remove Outliers")
+
         # Filter data based on selected speaker
         filtered_data = data[data['Speaker'] == selected_speaker]
+
+        # Remove outliers if option is selected
+        if remove_outliers_option:
+            filtered_data = remove_outliers(filtered_data, 'Weight')
 
         # Plot
         fig = px.scatter(filtered_data, x='Date', y='Weight', hover_data=['Msg'], color='Speaker')
