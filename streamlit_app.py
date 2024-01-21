@@ -90,9 +90,9 @@ def main():
     with col2:
         st.write("\n\n\n\n")
         st.write("\n\n\n\n")
-        st.write("I spent the first part of 2023 going from a Skinny fat 150-155 to a losing 10 pounds using IF and a CGM")
+        st.write("I spent the first part of 2023 going from a Skinny fat 150-155 to losing 10 pounds using IF and a CGM")
         st.write("\n\n\n\n")
-        st.write("""After losing the dead weight I bulked back to the 155 and hit PR in all weightlifting areas""")
+        st.write("""After losing the dead weight I bulked back to the 155 and hit PR's in all weightlifting areas""")
 
     # File uploader    
 
