@@ -81,5 +81,22 @@ def main():
         fig.update_layout(xaxis_range=[100, None], showlegend=False)
         st.plotly_chart(fig)
 
+    st.title("My Weight in 2023")
+
+    # Layout for description
+    col1, col2 = st.columns([1, 2])
+    with col1:
+        st.image('/mount/src/what_weight/my_weight.jpeg', use_column_width=True)
+    with col2:
+        st.write("\n\n\n\n")
+        st.write("\n\n\n\n")
+        st.write("I spent the first part of 2023 going from a Skinny fat 150-155 to a losing 10 pounds using IF and a CGM")
+        st.write("\n\n\n\n")
+        st.write("""After losing the dead weight I bulked back to the 155 and hit PR in all weightlifting areas""")
+
+    # File uploader    
+
+        
+
 if __name__ == "__main__":
     main()
