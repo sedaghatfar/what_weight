@@ -94,6 +94,8 @@ def main():
         st.write("\n\n\n\n")
         st.write("""After losing the dead weight I bulked back to the 155 and hit PR's in all weightlifting areas""")
 
+    st.image('/mount/src/what_weight/progress_resized.jpeg', use_column_width=True)
+
     # File uploader    
 
         
